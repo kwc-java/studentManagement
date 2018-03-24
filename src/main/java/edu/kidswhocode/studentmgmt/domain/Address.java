@@ -1,5 +1,7 @@
 package edu.kidswhocode.studentmgmt.domain;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+
 import javax.persistence.*;
 import java.util.Objects;
 
