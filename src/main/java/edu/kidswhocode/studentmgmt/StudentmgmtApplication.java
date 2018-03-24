@@ -24,7 +24,7 @@ public class StudentmgmtApplication {
 
 		for (int i = 1; i <= 8; i++) {
 			level = new Level();
-			level.setName(String.valueOf(i);
+			level.setName(String.valueOf(i));
 			levelRepository.save(level);
 		}
 	}
