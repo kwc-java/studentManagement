@@ -14,6 +14,7 @@ public class LevelInitTester {
 
     @PostConstruct
     public void initLevels() {
+        levelRepository.deleteAll();
         Level level = new Level();
         level.setName("KG");
         levelRepository.save(level);
