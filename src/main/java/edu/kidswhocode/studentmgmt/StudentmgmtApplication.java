@@ -17,15 +17,4 @@ public class StudentmgmtApplication {
 		SpringApplication.run(StudentmgmtApplication.class, args);
 	}
 
-	public void generateLevels() {
-		Level level = new Level();
-		level.setName("KG");
-		levelRepository.save(level);
-
-		for (int i = 1; i <= 8; i++) {
-			level = new Level();
-			level.setName(String.valueOf(i));
-			levelRepository.save(level);
-		}
-	}
 }
