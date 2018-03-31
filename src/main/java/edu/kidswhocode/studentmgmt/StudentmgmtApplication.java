@@ -1,13 +1,16 @@
 package edu.kidswhocode.studentmgmt;
 
-import com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.PrivateKeyResolver;
-import edu.kidswhocode.studentmgmt.domain.Level;
 import edu.kidswhocode.studentmgmt.repository.LevelRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 
 @SpringBootApplication
+@EnableAutoConfiguration(exclude = {
+		SecurityAutoConfiguration.class
+})
 public class StudentmgmtApplication {
 
 	@Autowired
