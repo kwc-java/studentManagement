@@ -16,7 +16,7 @@ import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.themes.ValoTheme;
 import org.springframework.beans.factory.annotation.Autowired;
 
-@Theme("Valo")
+@Theme("chameleon")
 @SpringUI
 @SpringViewDisplay
 public class SchoolAppUI extends UI implements ViewDisplay {
